@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import vos.Ingrediente;
-import vos.Video;
 
 public class DAOIngrediente {
 
