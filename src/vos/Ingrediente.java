@@ -16,7 +16,7 @@ public class Ingrediente {
 	 * Nombre del ingrediente
 	 */
 	@JsonProperty(value="name")
-	private String name;
+	private String nombre;
 
 	/**
 	 * Descripcion del ingrediente
@@ -25,23 +25,24 @@ public class Ingrediente {
 	private String descripcion;
 	
 	/**
-	 * Traduccion
+	 * Traduccion del ingrediente
 	 */
 	@JsonProperty(value="traduccion")
 	private String traduccion;
 	
 	
 	/**
-	 * Metodo constructor de la clase video
-	 * <b>post: </b> Crea el video con los valores que entran como parametro
-	 * @param id - Id del video.
-	 * @param name - Nombre del video. name != null
-	 * @param duration - Duracion en minutos del video.
+	 * Metodo constructor de la clase Ingrediente
+	 * <b>post: </b> Crea el Ingrediente con los valores que entran como parametro
+	 * @param id - Id del Ingrediente.
+	 * @param nombre - Nombre del Ingrediente.
+	 * @param descripcion - Descripcion del Ingrediente.
+	 * @param traduccion - Traduccion del Ingrediente.
 	 */
-	public Ingrediente(@JsonProperty(value="id")Long id, @JsonProperty(value="name")String name,@JsonProperty(value="descripcion")String descripcion,@JsonProperty(value="traduccion")String traduccion) {
+	public Ingrediente(@JsonProperty(value="id")Long id, @JsonProperty(value="nombre")String nombre,@JsonProperty(value="descripcion")String descripcion,@JsonProperty(value="traduccion")String traduccion) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.traduccion = traduccion;
 	}
@@ -55,12 +56,12 @@ public class Ingrediente {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getDescripcion() {
