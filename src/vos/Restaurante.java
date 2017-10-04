@@ -28,7 +28,7 @@ public class Restaurante {
 	 * Tipo de comida del restaurante
 	 */
 	@JsonProperty(value="tipoComida")
-	private String tipoComida;
+	private Long tipoComida;
 	
 	/**
 	 * Pagina web del restaurante
@@ -45,7 +45,7 @@ public class Restaurante {
 	 * @param tipoComida - Tipo de comida del Restaurante.
 	 * @param paginaWeb - PaginaWeb del Restaurante.
 	 */
-	public Restaurante(@JsonProperty(value="id")Long id, @JsonProperty(value="nombre")String nombre,@JsonProperty(value="representante")String representante,@JsonProperty(value="tipoComida")String tipoComida,@JsonProperty(value="paginaWeb")String paginaWeb) {
+	public Restaurante(@JsonProperty(value="id")Long id, @JsonProperty(value="nombre")String nombre,@JsonProperty(value="representante")String representante,@JsonProperty(value="tipoComida")Long tipoComida,@JsonProperty(value="paginaWeb")String paginaWeb) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -78,11 +78,11 @@ public class Restaurante {
 		this.representante = representante;
 	}
 
-	public String getTipoComida() {
+	public Long getTipoComida() {
 		return tipoComida;
 	}
 
-	public void setTipoComida(String tipoComida) {
+	public void setTipoComida(Long tipoComida) {
 		this.tipoComida = tipoComida;
 	}
 
